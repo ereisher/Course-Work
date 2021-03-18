@@ -1,18 +1,17 @@
-version: 1
-frontend:
-  phases:
-    # IMPORTANT - Please verify your build commands
-    build:
-      commands: []
-      <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
+<!DOCTYPE html>
+<html>
+<body>
+
+<form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
   Enter your First Name: <input type="text" name="fname">
-  Enter your Password  <input type="text" name="password">
+  Enter your Password:  <input type="text" password="password">
   <input type="submit">
 </form>
 
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // collect value of input field
+elizabethrussman@Elizabeths-MacBook-Pro ~ % pwd
+/Users/elizabethrussman    // collect value of input field
     $name = $_POST['fname'];
     $age = $_POST['password'];
     echo "<br>";
@@ -22,24 +21,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Hello $name! ";
     }
     if (empty($password)) {
-        echo "Password is empty";
-    } else if (password = "tapplab"){
-	echo "Access Granted $name ";
+    	echo "Password is empty";
+    } elseif ($password = "tapplab") {
+        echo "Welcome $name! ";
     } else {
         echo "You are $age years old";
     }
 }
-  artifacts:
-    # IMPORTANT - Please verify your build output directory
-    baseDirectory: /
-    files:
-      - '**/*'
-  cache:
-    paths: []
 ?>
-<!DOCTYPE html>
-<html>
-<body>
+
+</body>
+</html>
+
+
+
 
 
 
