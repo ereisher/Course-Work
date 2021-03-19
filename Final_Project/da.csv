@@ -1,0 +1,15 @@
+Time,Spectrometer Reading,,,Bacteria Count,,,,,,,
+12:30 ,0.046,,,,10-4 Dilution,,10^-6 Dilution,,10^-8 Dilution,,Turbidity Reading
+01:20 ,0.051,,,,Colony Count,CFU,Colony Count,CFU,Colony Count,CFU,
+01:50 ,0.051,,,1:20 PM,TMTC,N/A,18,1.8x10^8,0,0,0.563
+02:20 ,0.055,,,2:20 PM,TMTC,N/A,72,7.2x10^8,1,1.0x10^7,0.812
+02:50 ,0.047,,,3:20 PM,TMTC,N/A,82,8.2x10^8,0,0,1.38
+03:20 ,0.143,,,Control,No colonies formed,,,,,,N/A
+03:50 ,0.228,,,,,,,,,,
+04:20 ,0.398,,,,,,,,,,
+04:50 ,0.616,,,,,,,,,,
+05:20 ,1.08,,,,,,,,,,
+,,,,Virus Plaque Count,,,,,,,
+,,,,Dilution,10^-6,10^-8,10^-10,Control,,,
+,,,,Plaque Count,256,5,0,0,,,
+,,,,PFU,2.56*10^9,5*10^9,0,0,,,
