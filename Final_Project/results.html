@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<style>
+
+/* Creating the button */
+.btn {
+  background-color: Red;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Adding a hover to the button */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+</style>
+</head>
+<body>
+
+<!-- Header for page -->
+<h1> Results</h1>
+
+     <!-- Title of table -->
+     <h3> Baceterial Growth Curve</h3>
+
+     <!-- Creating the table using free google charts template -->
+     <!-- Found at https://developers.google.com/chart
+	/interactive/docs/gallery/table -->
+     <div id="table_div"></div>
+     <script type="text/javascript" 
+     src="https://www.gstatic.com/charts/loader.js"></script>
+     <script type="text/javascript">
+      google.charts.load('current', {'packages':['table']});
+      google.charts.setOnLoadCallback(drawTable);
+
+      <!-- Adding the results to the table -->
+      function drawTable() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('number', 'Time');
+        data.addColumn('number', 'Absorbance');
+        data.addRows([
+          [{v: 1230, f: '12:30'}, 0.046],
+          [{v: 120, f: '1:20'}, 0.051],
+          [{v: 150, f: '1:50'}, 0.051],
+          [{v: 220, f: '2:20'}, 0.055],
+	  [{v: 250, f: '2:50'}, 0.047],
+	  [{v: 320, f: '3:20'}, 0.143],
+	  [{v: 350, f: '3:50'}, 0.228],
+	  [{v: 420, f: '4:20'}, 0.398],
+	  [{v: 450, f: '4:50'}, 0.616],
+	  [{v: 520, f: '5:20'}, 1.08]
+        ]);
+	
+        <!-- Setting the dimensions of the table -->
+	var options = 
+		{'width': 550, 'height': 400};
+        var table = new 
+		google.visualization.Table(document.getElementById('table_div'));
+
+        <!-- Creating the table -->
+        table.draw(data, options);
+      }
+    </script>
+    
+    <!-- Header for phage sequence --> 
+    <h3> Novel Phage Sequence</h3>
+    
+    <!-- FASTA sequence button --> 
+    <a href="novelPhage.fa" button class="btn">
+    Download Novel Phage FASTA Here!</button></a>
+</body>
+</html>

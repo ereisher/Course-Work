@@ -1,0 +1,12 @@
+My database includes a homepage with has links to the methods, results, 
+and NCBI pages. On the homepage is also includes an image from the 
+Tapprich lab. On the methods page, there are two downloadable method files, 
+one for characterizing a bacteriophage and the other is the full virus 
+hunting manual. The results page contains a table with the results from
+the bacterial growth curve and a downloadable link to a novel phage FASTA
+sequence. The NCBI page allows you to input a file for query for alignment
+or analysis into NCBI BLAST. The spectrometer reading data was done by hand 
+for the webpage, however, the datadump is included in the file for use with 
+MySQL. The remainder of the data has been hard coded by hand into the code.
+For privacy of the researchers, there will not be any names or identifiers 
+used in the database. 
